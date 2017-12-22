@@ -1,0 +1,15 @@
+{
+  "name": "depthmapX",
+  "description": "Node.js Bindings for depthmapX CLI",
+  "version": "0.0.1",
+  "repository": "archilogic-com/node-depthmapX",
+  "main": "index.js",
+  "scripts": {
+    "example": "node example.js"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "chalk": "^2.3.0"
+  },
+  "devDependencies": {}
+}
