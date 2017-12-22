@@ -13,8 +13,7 @@ Command Line Interface bindings for depthmapX. Every global option in depthmap C
 
 ## Method Options
 
-depthmapX CLI options are translated directly into node method options. See official depthmapX docs for reference:
-https://github.com/SpaceGroupUCL/depthmapX/blob/master/docs/commandline.md
+depthmapX CLI options are translated directly into node method options. See [official depthmapX CLI docs](https://github.com/SpaceGroupUCL/depthmapX/blob/master/docs/commandline.md) for reference.
 
 ## Example
 ```javascript
