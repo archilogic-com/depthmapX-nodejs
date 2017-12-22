@@ -5,11 +5,11 @@ const Promise = require('bluebird')
 // shared
 
 const depthmapVersions = {
-  linux: './bin/linux/depthmapXcli',
-  darwin: './bin/osx/depthmapXcli'
+  linux: '/bin/linux/depthmapXcli',
+  darwin: '/bin/osx/depthmapXcli'
   //win32: './bin/win32/depthmapXcli' // FIXME: add Win32 CLI executable
 }
-const depthmapPath = depthmapVersions[process.platform]
+const depthmapPath = __dirname + depthmapVersions[process.platform]
 
 // methods
 
