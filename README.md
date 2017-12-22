@@ -17,7 +17,7 @@ depthmapX CLI options are translated directly into node method options. See offi
 https://github.com/SpaceGroupUCL/depthmapX/blob/master/docs/commandline.md
 
 ## Example
-```
+```javascript
 const dmx = require('depthmapX')
 
 // 1. import file
