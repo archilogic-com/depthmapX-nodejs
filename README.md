@@ -1,19 +1,21 @@
 # Node.js Bindings for depthmapX CLI
 
-Command Line Interface bindings for depthmapX. Every global option in depthmap CLI has it's method in the depthmapX namespace.
+Command Line Interface bindings for depthmapX.
 
 ## Methods
 
-| DepthmapX CLI mode | node depthmapX method |
+Every global option in depthmap CLI translates to a module method.
+
+| CLI mode option | node module method |
 | -------------------- | --------------------- |
-| VGA | vga |
-| LINK | link |
-| VISPREP | visprep |
-| AXIAL | axial | 
-| AGENTS | agents |
-| ISOVIST | isovist |
-| EXPORT | exportData |
-| IMPORT | importData |
+| -m VGA | dmx.vga |
+| -m LINK | dmx.link |
+| -m VISPREP | dmx.visprep |
+| -m AXIAL | dmx.axial | 
+| -m AGENTS | dmx.agents |
+| -m ISOVIST | dmx.isovist |
+| -m EXPORT | dmx.exportData |
+| -m IMPORT | dmx.importData |
   
 ## Method Options
 
