@@ -6,11 +6,15 @@ Command Line Interface bindings for depthmapX. Every global option in depthmap C
 
 | DepthmapX CLI mode | node depthmapX method |
 | -------------------- | --------------------- |
-| IMPORT | importData |
-| EXPORT | exportData |
 | VGA | vga |
+| LINK | link |
 | VISPREP | visprep |
-
+| AXIAL | axial | 
+| AGENTS | agents |
+| ISOVIST | isovist |
+| EXPORT | exportData |
+| IMPORT | importData |
+  
 ## Method Options
 
 depthmapX CLI options are translated directly into node method options. See [official depthmapX CLI docs](https://github.com/SpaceGroupUCL/depthmapX/blob/master/docs/commandline.md) for reference.
