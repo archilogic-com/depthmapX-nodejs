@@ -5,9 +5,9 @@ const Promise = require('bluebird')
 // shared
 
 const depthmapVersions = {
-  linux: './depthmap/linux/depthmapXcli',
-  darwin: './depthmap/osx/depthmapXcli'
-  //win32: './depthmap/win32/depthmapXcli' // FIXME: add Win32 CLI executable
+  linux: './bin/linux/depthmapXcli',
+  darwin: './bin/osx/depthmapXcli'
+  //win32: './bin/win32/depthmapXcli' // FIXME: add Win32 CLI executable
 }
 const depthmapPath = depthmapVersions[process.platform]
 
@@ -128,7 +128,7 @@ function runCli (cmd, args) {
       console.error(chalk.red(`CLI: ${data}`))
     })
     ls.on('close', (code) => {
-      if (code === 0) {
+      if (!code) {
         resolve()
       } else {
         console.error(`CLI: Exited with code ${code}`)
