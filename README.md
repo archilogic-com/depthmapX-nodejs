@@ -1,6 +1,6 @@
 # Node.js Bindings for depthmapX CLI
 
-Command Line Interface bindings for depthmapX.
+Command Line Interface bindings for [SpaceGroupUCL/depthmapX](https://github.com/SpaceGroupUCL/depthmapX/).
 
 ## Methods
 
