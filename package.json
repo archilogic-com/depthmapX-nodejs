@@ -1,7 +1,7 @@
 {
   "name": "depthmapx",
   "description": "Node.js Bindings for depthmapX CLI",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "repository": "archilogic-com/node-depthmapX",
   "main": "index.js",
   "scripts": {
