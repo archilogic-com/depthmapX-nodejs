@@ -17,7 +17,7 @@ depthmapX CLI options are translated directly into node method options. See [off
 
 ## Example
 ```javascript
-const dmx = require('depthmapX')
+const dmx = require('depthmapx')
 
 // 1. import file
 
