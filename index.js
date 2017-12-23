@@ -42,7 +42,17 @@ function visprep (args) {
   let cliArgs = ['-m', 'VISPREP', '-f', args.f, '-o', args.o]
 
   if (args.pg) cliArgs.push('-pg', args.pg)
-  if (args.pp) cliArgs.push('-pp', args.pp)
+  if (args.pp) {
+    if (Array.isArray(args.pp)) {
+      // multiple points
+      args.pp.forEach(value => {
+        cliArgs.push('-pp', value)
+      })
+    } else {
+      // one point only
+      cliArgs.push('-pp', args.pp)
+    }
+  }
   if (args.pf) cliArgs.push('-pf', args.pf)
   if (args.pr) cliArgs.push('-pr', args.pr)
   if (args.pb) cliArgs.push('-pb')
@@ -120,19 +130,23 @@ function importData (args) {
 
 function runCli (cmd, args) {
   return new Promise((resolve, reject) => {
+
     const ls = spawn(cmd, args, {shell: true})
+    const errors = []
+
     ls.stdout.on('data', (data) => {
-      console.log(`CLI: ${data}`)
+      console.log(`depthmapX: ${data}`)
     })
     ls.stderr.on('data', (data) => {
-      console.error(chalk.red(`CLI: ${data}`))
+      errors.push(errors)
+      console.error(chalk.red(`depthmapX error: ${data}`))
     })
     ls.on('close', (code) => {
       if (!code) {
         resolve()
       } else {
-        console.error(`CLI: Exited with code ${code}`)
-        reject()
+        console.error(`depthmapX Error: Exited with code ${code}`)
+        reject(errors.join('\n'))
       }
     })
   })
