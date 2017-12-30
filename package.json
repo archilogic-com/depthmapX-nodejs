@@ -5,7 +5,7 @@
   "repository": "archilogic-com/depthmapX-nodejs",
   "main": "index.js",
   "scripts": {
-    "example": "node example.js"
+    "example": "node ./example/example.js"
   },
   "dependencies": {
     "bluebird": "^3.5.1",

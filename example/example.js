@@ -1,6 +1,6 @@
 // Creates graph and CSV files from 'archilogic-office.dxf' in 'example' dir
 
-const dmx = require('./index.js')
+const dmx = require('../index.js')
 
 // 1. import file
 
