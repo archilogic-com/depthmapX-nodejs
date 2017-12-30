@@ -2,6 +2,11 @@
 
 Command Line Interface bindings for [SpaceGroupUCL/depthmapX](https://github.com/SpaceGroupUCL/depthmapX/).
 
+## Compatibility
+
+- **OSX** and **Linux** are fully supported.
+- **Windows** will be supported soon after the next release of depthmapX CLI.<br>https://github.com/archilogic-com/node-depthmapX/issues/1
+
 ## Methods
 
 Every global option in depthmap CLI translates to a module method.
