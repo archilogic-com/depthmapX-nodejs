@@ -1,7 +1,7 @@
 {
   "name": "depthmapx",
   "description": "depthmapX for Node.js",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "repository": "archilogic-com/depthmapX-nodejs",
   "main": "index.js",
   "scripts": {
